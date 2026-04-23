@@ -1,0 +1,113 @@
+@imprt url('https://googleapis.com');
+
+body{
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Outfit';
+  justify-content: center;
+}
+
+body > div > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+span{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+span > img{
+  width: 16px;
+  height: 16px;
+}
+
+
+body > div{
+  padding: 20px;
+  background-color: hsl(216, 50%, 16%);
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+.blue-s > p{
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+.fird{
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.fird::after{
+  position: absolute;
+  background-color: hsla(178, 100%, 50%, 0.6);
+}
+
+h3:hover{
+  color: hsl(178, 100%, 50%); 
+}
+
+.grey-t{
+  color: hsl(215, 51%, 70%);
+}
+
+
+
+hr{
+  border-color: hsl(215, 32%, 27%);
+}
+
+.last{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0px;
+  border: 1px solid white;
+}
+
+.last-d{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+}
+
+.last-d > p{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.last-d > p > span{
+  color: white;
+  margin-right: 2px;
+}
+
+.img-container {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+p > span{
+  margin-left: 5px;
+}
+
+.img-container:hover .view-icon {
+  background: hsla(178, 100%, 50%, 0.5) url('https://github.io') no-repeat center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
